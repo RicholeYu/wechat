@@ -2,7 +2,7 @@ import { Controller, Get, Req } from '@nestjs/common';
 import { AppService } from './app.service';
 import * as wechat from 'wechat-jssdk';
 import { Request } from 'express';
-import config from '../wxConfig.json';
+import config from './wxConfig.json';
 
 const wx = new wechat.Wechat(config);
 
