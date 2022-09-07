@@ -1,6 +1,6 @@
 FROM node
-COPY ./ /mail
-WORKDIR /mail
+COPY ./ /wechat
+WORKDIR /wechat
 RUN npm i npm -g
 RUN npm i
 RUN npm run build
