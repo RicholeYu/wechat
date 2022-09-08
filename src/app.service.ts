@@ -19,7 +19,7 @@ export class AppService {
       ),
     );
 
-    console.log(response.data);
-    this.accessToken = response.data.accessToken;
+    this.accessToken = response.data.access_token;
+    console.log(this.accessToken);
   }
 }
