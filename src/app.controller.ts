@@ -7,7 +7,7 @@ import * as config from './wxConfig.json';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Get('/wechat/get-signature')
+  @Get('/wechat/')
   async getSignature(@Query() query) {
     const arr = [config.wechatToken, query.timestamp, query.nonce].sort();
     const sha1Hash = crypto.createHash('sha1');
