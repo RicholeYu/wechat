@@ -1,7 +1,7 @@
 import * as crypto from 'crypto';
 import { Controller, Get, Logger, Query } from '@nestjs/common';
 import { AppService } from './app.service';
-import config from './wxConfig.json';
+import * as config from './wxConfig.json';
 
 @Controller()
 export class AppController {
