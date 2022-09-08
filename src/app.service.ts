@@ -1,8 +1,8 @@
 import { HttpService } from '@nestjs/axios';
 import { Injectable } from '@nestjs/common';
 import { Cron, CronExpression } from '@nestjs/schedule';
-import { firstValueFrom, lastValueFrom } from 'rxjs';
-import Config from './wxConfig.json';
+import { firstValueFrom } from 'rxjs';
+import * as Config from './wxConfig.json';
 @Injectable()
 export class AppService {
   accessToken: string;
