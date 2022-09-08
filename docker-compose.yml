@@ -1,7 +1,7 @@
 version: '2'
 
 services:
-  mailer:
+  wechat:
     container_name: wechat
     network_mode: "bridge"
     build: .
