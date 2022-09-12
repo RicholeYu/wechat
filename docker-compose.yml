@@ -9,6 +9,8 @@ services:
     restart: "always"
     ports:
       - "9000:3000"
+    networks:
+      - wechat
 
 networks:
   wechat:
