@@ -9,3 +9,8 @@ services:
     restart: "always"
     ports:
       - "9000:3000"
+
+networks:
+  wechat:
+    external:
+      name: database_database
